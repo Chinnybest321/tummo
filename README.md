@@ -8,6 +8,8 @@ Tummo is one shared pet. Holders buy $TUMMO and feed it. Fed TUMMO is burned and
 
 ## Try it (for judges)
 
+**Play it live: https://tummo-sepia.vercel.app** (NEAR testnet).
+
 The live contract is [`tummo.testnet`](https://testnet.nearblocks.io/address/tummo.testnet). It is locked: it has no access keys.
 
 1. **Read the rules on-chain.** Run `near contract call-function as-read-only tummo.testnet get_config json-args '{}' network-config testnet now`. You see every parameter, plus `"admin": null`.
