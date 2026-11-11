@@ -8,7 +8,7 @@ Tummo is one shared pet. Holders buy $TUMMO and feed it. Fed TUMMO is burned and
 
 ## Try it (for judges)
 
-**Play it live: https://tummo.fun** (NEAR testnet). Mirror: https://tummo-sepia.vercel.app
+**Play it live: https://tummo.fun** (NEAR testnet).
 
 The live contract is [`tummo.testnet`](https://testnet.nearblocks.io/address/tummo.testnet). It is locked: it has no access keys.
 
