@@ -24,4 +24,4 @@ read -r -p "Type LOCK to delete them for good: " OK
 near account delete-keys "$ACCOUNT" public-keys "$KEYS" network-config "$NET" sign-with-keychain send
 echo
 near account list-keys "$ACCOUNT" network-config "$NET" now
-echo "Done. The app's lock badge reads this key list straight from RPC."
+echo "Done. Anyone can confirm the empty key list on NearBlocks or with near account list-keys."

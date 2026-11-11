@@ -29,7 +29,7 @@ Tummo is one shared pet. Holders buy $TUMMO and feed it. Fed TUMMO is burned and
 
 Every parameter is a constant in `contract/src/lib.rs`, and `get_config()` returns all of them. There is no owner and no method that changes a rule.
 
-That alone isn't enough: whoever deploys a contract keeps the account's access keys and could deploy new code. `scripts/deploy-and-lock.sh` deploys, runs a smoke test, then deletes every access key on the contract account. After that, nobody can redeploy it, change a rule or move the treasury. The app reads the account's key list from RPC and shows **No admin keys** only when the list is empty.
+That alone isn't enough: whoever deploys a contract keeps the account's access keys and could deploy new code. `scripts/deploy-and-lock.sh` deploys, runs a smoke test, then deletes every access key on the contract account. After that, nobody can redeploy it, change a rule or move the treasury. Anyone can check it: `near account list-keys tummo.testnet network-config testnet now` lists no keys once it is locked, and NearBlocks shows the same.
 
 ## Sybil resistance, and its limits
 
@@ -136,3 +136,7 @@ Limits:
 
 - The account is an implicit account (64 hex characters). It exists on-chain only after it receives NEAR, so a new player has to fund it first. The app shows the address, a copy button and a testnet faucet link when the balance is zero.
 - One X account gets one wallet, but that is enforced by Privy, not by the contract. The sybil limits above still apply on-chain.
+
+## License
+
+All rights reserved, with permission for NEAR HACKATHON judges to build and run it. See [LICENSE](LICENSE).
