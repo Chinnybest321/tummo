@@ -6,6 +6,19 @@ A memecoin that is alive. Built at NEAR HACKATHON, Track 11: Memecoins With Mech
 
 Tummo is one shared pet. Holders buy $TUMMO and feed it. Fed TUMMO is burned and buys the pet time. While it lives, its treasury pays the people who fed it. If nobody feeds it in time, it starves, goes to the graveyard, and a new egg hatches.
 
+## Try it (for judges)
+
+The live contract is [`tummo.testnet`](https://testnet.nearblocks.io/address/tummo.testnet). It is locked: it has no access keys.
+
+1. **Read the rules on-chain.** Run `near contract call-function as-read-only tummo.testnet get_config json-args '{}' network-config testnet now`. You see every parameter, plus `"admin": null`.
+2. **Check that nobody can change them.** Run `near account list-keys tummo.testnet network-config testnet now`. You see an empty key list.
+3. **See the pet.** Run `near contract call-function as-read-only tummo.testnet get_pet json-args '{}' network-config testnet now`. You see its deadline, level, treasury, supply and today's feast progress (`day_feeders`).
+4. **Run the app.** Run `cd web && cp .env.example .env && npm i --legacy-peer-deps && npm run dev`, then open http://localhost:5173. You see the pet, its countdown, today's feast progress, the leaderboard and the log of every buy, feed and sell.
+5. **Play.** Connect a testnet wallet, buy TUMMO, feed it. You see the countdown jump forward, a `fed` line in the log and your TUMMO burned. Cash out sells TUMMO back for its share of the treasury.
+6. **Check the mechanic in tests.** Run `cd contract && cargo test`. 18 tests cover pricing, burning, the drip, rescues, feasts, death and selling.
+
+On Windows, if `cargo test` fails building `aws-lc-sys`, set `AWS_LC_SYS_PREBUILT_NASM=1` and `AWS_LC_SYS_C_STD=11` first.
+
 ## Rules
 
 | | |
@@ -80,9 +93,11 @@ Averages over 5 seeds:
 | Final  600s/TUMMO, 3%/day, level 250 | A few whales | 2.0 | 0.0 | 139,182 | 475.7 |
 | Final  600s/TUMMO, 3%/day, level 250 | Community leaves | 2.8 | 4.4 | 15,125 | 8.9 |
 
+Selling was added after these runs, so the simulation doesn't model it. A sale pays out at most the seller's share of the treasury minus 10%, so it can't drain it, but heavy selling does shrink the drip for everyone else.
+
 ## Full history
 
-Every buy (mint), feed (burn), rescue, feast and death is emitted as a NEP-297 event (`standard: "tummo"`), so the complete log lives on-chain and in any explorer. The contract also keeps the last 100 entries for the app, and the Log tab links to the account on NearBlocks for everything older.
+Every buy (mint), feed (burn), sell (burn), rescue, feast and death is emitted as a NEP-297 event (`standard: "tummo"`), so the complete log lives on-chain and in any explorer. The contract also keeps the last 100 entries for the app, and the Log tab links to the account on NearBlocks for everything older.
 
 ## meme.cooking
 
@@ -90,7 +105,7 @@ meme.cooking is NEAR's fair-launch memecoin launchpad: tokens are distributed by
 
 ## NEAR
 
-- NEP-141 token with NEP-297 events (`buy`, `feed`, `rescue`, `feast`, `death`)
+- NEP-141 token with NEP-297 events (`buy`, `feed`, `sell`, `rescue`, `feast`, `death`)
 - On-chain activity log and graveyard, read straight from RPC. No indexer.
 - Wallet Selector with Meteor, MyNearWallet and HERE
 - Sign in with X: Privy creates a NEAR account for the player, no wallet app needed
@@ -99,7 +114,7 @@ meme.cooking is NEAR's fair-launch memecoin launchpad: tokens are distributed by
 
 ```bash
 cd contract
-cargo test          # 15 tests
+cargo test          # 18 tests
 cargo near build non-reproducible-wasm
 ```
 
