@@ -1,0 +1,15 @@
+name: contract
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: contract } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with: { targets: wasm32-unknown-unknown }
+      - run: cargo test
+      - run: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/cargo-near/releases/latest/download/cargo-near-installer.sh | sh
+      - run: cargo near build non-reproducible-wasm
+      - uses: actions/upload-artifact@v4
+        with: { name: tummo-wasm, path: contract/target/near/tummo.wasm }

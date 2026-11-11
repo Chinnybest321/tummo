@@ -1,0 +1,222 @@
+{
+ "final": {
+  "Steady community": {
+   "deaths": 0,
+   "feasts": 38,
+   "alive_pct": 99.9,
+   "burned": 61193,
+   "minted": 61313,
+   "treasury": 144.87,
+   "paid": 104.4
+  },
+  "Hype then fade": {
+   "deaths": 3,
+   "feasts": 31,
+   "alive_pct": 99.9,
+   "burned": 62546,
+   "minted": 62890,
+   "treasury": 98.07,
+   "paid": 162.58
+  },
+  "A few whales": {
+   "deaths": 2,
+   "feasts": 0,
+   "alive_pct": 99.4,
+   "burned": 137578,
+   "minted": 138940,
+   "treasury": 641.65,
+   "paid": 462.5
+  },
+  "Community leaves": {
+   "deaths": 3,
+   "feasts": 5,
+   "alive_pct": 42.7,
+   "burned": 16036,
+   "minted": 16152,
+   "treasury": 19.55,
+   "paid": 9.65
+  }
+ },
+ "comparison": [
+  {
+   "params": "A  600s/TUMMO, 3%/day, level 100",
+   "scenario": "Steady community",
+   "deaths": 0.0,
+   "feasts": 48.8,
+   "burned": 81594,
+   "paid": 149.8,
+   "treasury_end": 266.0
+  },
+  {
+   "params": "A  600s/TUMMO, 3%/day, level 100",
+   "scenario": "Hype then fade",
+   "deaths": 4.0,
+   "feasts": 31.8,
+   "burned": 66568,
+   "paid": 175.5,
+   "treasury_end": 115.8
+  },
+  {
+   "params": "A  600s/TUMMO, 3%/day, level 100",
+   "scenario": "A few whales",
+   "deaths": 3.2,
+   "feasts": 0.0,
+   "burned": 138290,
+   "paid": 467.2,
+   "treasury_end": 651.3
+  },
+  {
+   "params": "A  600s/TUMMO, 3%/day, level 100",
+   "scenario": "Community leaves",
+   "deaths": 3.6,
+   "feasts": 6.4,
+   "burned": 16085,
+   "paid": 9.5,
+   "treasury_end": 19.8
+  },
+  {
+   "params": "B  300s/TUMMO, 3%/day, level 100",
+   "scenario": "Steady community",
+   "deaths": 3.0,
+   "feasts": 46.4,
+   "burned": 88838,
+   "paid": 201.0,
+   "treasury_end": 284.1
+  },
+  {
+   "params": "B  300s/TUMMO, 3%/day, level 100",
+   "scenario": "Hype then fade",
+   "deaths": 8.0,
+   "feasts": 38.8,
+   "burned": 70643,
+   "paid": 188.9,
+   "treasury_end": 134.2
+  },
+  {
+   "params": "B  300s/TUMMO, 3%/day, level 100",
+   "scenario": "A few whales",
+   "deaths": 7.0,
+   "feasts": 0.0,
+   "burned": 145140,
+   "paid": 526.3,
+   "treasury_end": 705.0
+  },
+  {
+   "params": "B  300s/TUMMO, 3%/day, level 100",
+   "scenario": "Community leaves",
+   "deaths": 5.8,
+   "feasts": 10.0,
+   "burned": 19050,
+   "paid": 12.0,
+   "treasury_end": 25.5
+  },
+  {
+   "params": "C  600s/TUMMO, 2%/day, level 400",
+   "scenario": "Steady community",
+   "deaths": 0.0,
+   "feasts": 29.0,
+   "burned": 57579,
+   "paid": 71.2,
+   "treasury_end": 153.0
+  },
+  {
+   "params": "C  600s/TUMMO, 2%/day, level 400",
+   "scenario": "Hype then fade",
+   "deaths": 1.6,
+   "feasts": 33.4,
+   "burned": 63551,
+   "paid": 129.2,
+   "treasury_end": 139.1
+  },
+  {
+   "params": "C  600s/TUMMO, 2%/day, level 400",
+   "scenario": "A few whales",
+   "deaths": 1.6,
+   "feasts": 0.0,
+   "burned": 137339,
+   "paid": 354.4,
+   "treasury_end": 747.9
+  },
+  {
+   "params": "C  600s/TUMMO, 2%/day, level 400",
+   "scenario": "Community leaves",
+   "deaths": 2.4,
+   "feasts": 3.4,
+   "burned": 14545,
+   "paid": 6.1,
+   "treasury_end": 19.3
+  },
+  {
+   "params": "D  900s/TUMMO, 2%/day, level 400",
+   "scenario": "Steady community",
+   "deaths": 0.0,
+   "feasts": 20.8,
+   "burned": 53599,
+   "paid": 66.9,
+   "treasury_end": 131.1
+  },
+  {
+   "params": "D  900s/TUMMO, 2%/day, level 400",
+   "scenario": "Hype then fade",
+   "deaths": 1.0,
+   "feasts": 29.8,
+   "burned": 62253,
+   "paid": 127.8,
+   "treasury_end": 131.1
+  },
+  {
+   "params": "D  900s/TUMMO, 2%/day, level 400",
+   "scenario": "A few whales",
+   "deaths": 1.2,
+   "feasts": 0.0,
+   "burned": 131701,
+   "paid": 337.3,
+   "treasury_end": 685.7
+  },
+  {
+   "params": "D  900s/TUMMO, 2%/day, level 400",
+   "scenario": "Community leaves",
+   "deaths": 2.0,
+   "feasts": 2.2,
+   "burned": 14060,
+   "paid": 6.0,
+   "treasury_end": 18.3
+  },
+  {
+   "params": "Final  600s/TUMMO, 3%/day, level 250",
+   "scenario": "Steady community",
+   "deaths": 0.0,
+   "feasts": 38.2,
+   "burned": 60711,
+   "paid": 101.9,
+   "treasury_end": 144.0
+  },
+  {
+   "params": "Final  600s/TUMMO, 3%/day, level 250",
+   "scenario": "Hype then fade",
+   "deaths": 2.4,
+   "feasts": 33.4,
+   "burned": 64689,
+   "paid": 168.9,
+   "treasury_end": 107.8
+  },
+  {
+   "params": "Final  600s/TUMMO, 3%/day, level 250",
+   "scenario": "A few whales",
+   "deaths": 2.0,
+   "feasts": 0.0,
+   "burned": 139182,
+   "paid": 475.7,
+   "treasury_end": 653.0
+  },
+  {
+   "params": "Final  600s/TUMMO, 3%/day, level 250",
+   "scenario": "Community leaves",
+   "deaths": 2.8,
+   "feasts": 4.4,
+   "burned": 15125,
+   "paid": 8.9,
+   "treasury_end": 18.0
+  }
+ ]
+}
