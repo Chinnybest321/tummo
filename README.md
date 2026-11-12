@@ -156,6 +156,12 @@ Limits:
 - The account is an implicit account (64 hex characters). It exists on-chain only after it receives NEAR, so a new player has to fund it first. The app shows the address, a copy button and a testnet faucet link when the balance is zero.
 - One X account gets one wallet, but that is enforced by Privy, not by the contract. The sybil limits above still apply on-chain.
 
+## Team and other submission
+
+Tummo is a team build. Okafor Philip (industralist) is on the team.
+
+Okafor Philip also entered NEAR HACKATHON with [Boundora](https://github.com/indueth/boundora), a solo build in the NFTs That Do Something track. The two projects are independent: separate code, contracts, repositories and teams.
+
 ## License
 
 All rights reserved. NEAR HACKATHON judges may build and run it, anyone may play it, and it comes with no warranty. Testnet tokens have no value. See [LICENSE](LICENSE).
