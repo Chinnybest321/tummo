@@ -1,14 +1,60 @@
 Tummo license
 
-1. NEAR HACKATHON judging. The organizers and judges of NEAR HACKATHON may
-   download, build and run Tummo to judge it, until judging ends.
-
-2. Not open source. Copying, changing, reusing, publishing, sharing or
-   selling any part of Tummo is not allowed without Chinnybest321's consent
-   in writing, except where the law or GitHub's Terms of Service allow it.
-   The code is public to be read, and reading it grants no other rights.
-
-3. Dependencies. Open-source packages that Tummo uses are covered by their
-   own licenses, not this one.
-
 Copyright 2026 Chinnybest321. All rights reserved.
+
+"Tummo" means everything in this repository: the smart contract, the web
+app, the artwork (including the pet drawings), the simulation and the docs.
+
+1. What you may do
+
+   a. Read. The repository is public so anyone can read the code and judge
+      how Tummo works. GitHub's Terms of Service also let GitHub users view
+      and fork public repositories on GitHub. Neither of these grants any
+      other right.
+
+   b. Judge. The organizers and judges of NEAR HACKATHON may download,
+      build, run and test Tummo to evaluate it. This permission lasts until
+      judging and prize payouts for NEAR HACKATHON are complete.
+
+   c. Show. NEAR HACKATHON and NEAR Foundation may use the name "Tummo",
+      screenshots, video and a short description of the project to present
+      hackathon entries and results.
+
+   d. Play. Anyone may use the live app and interact with the deployed
+      contract as a player.
+
+2. What needs permission
+
+   Anything not listed above needs Chinnybest321's written consent first.
+   That includes copying, modifying, redeploying, reusing in another
+   project, republishing, distributing, sublicensing and selling Tummo or
+   any part of it, except where the law allows it without permission.
+
+3. Name and artwork
+
+   The name "Tummo", the logo and the pet artwork may not be used to
+   identify any other project, token or product.
+
+4. Testnet, no value, no advice
+
+   Tummo runs on NEAR testnet. Testnet NEAR and TUMMO have no monetary
+   value. Nothing in this repository or the app is financial, investment or
+   legal advice.
+
+5. No warranty
+
+   Tummo is provided "as is", without any warranty, express or implied,
+   including fitness for a particular purpose and absence of bugs. Smart
+   contracts can fail. The deployed contract is locked and cannot be fixed.
+   You use it at your own risk.
+
+6. No liability
+
+   To the fullest extent the law allows, Chinnybest321 is not liable for any
+   loss or damage arising from using, running or relying on Tummo,
+   including lost funds or tokens.
+
+7. Dependencies
+
+   Open-source packages that Tummo uses are covered by their own licenses,
+   not this one.

@@ -156,4 +156,4 @@ Limits:
 
 ## License
 
-All rights reserved, with permission for NEAR HACKATHON judges to build and run it. See [LICENSE](LICENSE).
+All rights reserved. NEAR HACKATHON judges may build and run it, anyone may play it, and it comes with no warranty. Testnet tokens have no value. See [LICENSE](LICENSE).
