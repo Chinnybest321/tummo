@@ -1,14 +1,14 @@
+Tummo license
+
+1. NEAR HACKATHON judging. The organizers and judges of NEAR HACKATHON may
+   download, build and run Tummo to judge it, until judging ends.
+
+2. Not open source. Copying, changing, reusing, publishing, sharing or
+   selling any part of Tummo is not allowed without Chinnybest321's consent
+   in writing, except where the law or GitHub's Terms of Service allow it.
+   The code is public to be read, and reading it grants no other rights.
+
+3. Dependencies. Open-source packages that Tummo uses are covered by their
+   own licenses, not this one.
+
 Copyright 2026 Chinnybest321. All rights reserved.
-
-Tummo's source code, artwork and documentation are published here so they
-can be read. Reading them does not grant a license to use them.
-
-Permission for NEAR HACKATHON: the organizers and judges of NEAR HACKATHON
-may download, build and run Tummo to judge it. That permission ends when
-judging ends.
-
-Anything else, including copying, changing, reusing, publishing, sharing or
-selling any part of Tummo, needs Chinnybest321's consent in writing first,
-except where the law or GitHub's Terms of Service allow it.
-
-Open-source packages that Tummo depends on keep their own licenses.
