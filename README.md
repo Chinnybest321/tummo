@@ -4,6 +4,8 @@
 
 A memecoin that is alive. Built at NEAR HACKATHON, Track 11: Memecoins With Mechanics.
 
+<img src="docs/tummo.gif" width="720" alt="Tummo: drag a coin to its mouth and it eats, feed it again and it jumps for joy, poke it and it giggles">
+
 Tummo is one shared pet. Holders buy $TUMMO and feed it. Fed TUMMO is burned and buys the pet time. While it lives, its treasury pays the people who fed it. If nobody feeds it in time, it starves, goes to the graveyard, and a new egg hatches.
 
 ## Try it (for judges)
