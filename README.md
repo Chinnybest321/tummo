@@ -158,7 +158,10 @@ Limits:
 
 ## Team and other submission
 
-Tummo is a team build. Okafor Philip (industralist) is on the team.
+Tummo is a team build.
+
+- **Ogbonna Sandra Chinenye** ([Chinnybest](https://github.com/Chinnybest321)), team lead
+- **Okafor Philip** (industralist), team member
 
 Okafor Philip also entered NEAR HACKATHON with [Boundora](https://github.com/indueth/boundora), a solo build in the NFTs That Do Something track. The two projects are independent: separate code, contracts, repositories and teams.
 
